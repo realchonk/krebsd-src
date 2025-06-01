@@ -16,7 +16,7 @@ SRCS+=	_flock_stub.c asprintf.c clrerr.c dprintf.c \
 	perror.c printf.c printf-pos.c putc.c putchar.c \
 	puts.c putw.c putwc.c putwchar.c \
 	refill.c remove.c rewind.c rget.c scanf.c setbuf.c setbuffer.c \
-	setvbuf.c snprintf.c sprintf.c sscanf.c stdio.c swprintf.c swscanf.c \
+	setvbuf.c sgetc.c sgets.c sgetz.c snprintf.c sprintf.c sscanf.c stdio.c swprintf.c swscanf.c \
 	tempnam.c tmpfile.c \
 	tmpnam.c ungetc.c ungetwc.c vasprintf.c vdprintf.c vfprintf.c \
 	vfscanf.c \
@@ -37,7 +37,7 @@ MAN+=	fclose.3 ferror.3 fflush.3 fgetln.3 fgets.3 fgetwln.3 fgetws.3 \
 	fputws.3 fread.3 fseek.3 funopen.3 fwide.3 getc.3 \
 	getline.3 getwc.3 mktemp.3 open_memstream.3 \
 	printf.3 printf_l.3 putc.3 putwc.3 remove.3 scanf.3 scanf_l.3 setbuf.3 \
-	stdio.3 tmpnam.3 \
+	sgetc.3 sgets.3 stdio.3 tmpnam.3 \
 	ungetc.3 ungetwc.3 wprintf.3 wscanf.3
 
 MLINKS+=fclose.3 fcloseall.3 \
@@ -127,6 +127,7 @@ MLINKS+=scanf_l.3 fscanf_l.3 \
 MLINKS+=setbuf.3 setbuffer.3 \
 	setbuf.3 setlinebuf.3 \
 	setbuf.3 setvbuf.3
+MLINKS+=sgets.3 sgetz.3
 MLINKS+=tmpnam.3 tempnam.3 \
 	tmpnam.3 tmpfile.3
 MLINKS+=wprintf.3 fwprintf.3 \
