@@ -30,6 +30,7 @@
  */
 
 #include <string.h>
+#include <ctype.h>
 
 char *sgetz (char *buf, const char *str)
 {
