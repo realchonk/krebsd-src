@@ -273,7 +273,7 @@ int	 fgetpos(FILE * __restrict, fpos_t * __restrict);
 char	*(fgets)(char * __restrict, int, FILE * __restrict);
 char	*(sgets)(char *, const char *);
 char	*(sgetz)(char *, const char *);
-int	 sgetc(const char *);
+int	 sgetc(const char **);
 FILE	*fopen(const char * __restrict, const char * __restrict);
 int	 fprintf(FILE * __restrict, const char * __restrict, ...);
 int	 fputc(int, FILE *);
