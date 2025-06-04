@@ -11,16 +11,17 @@
 .Sh SYNOPSIS
 .In stdio.h
 .Ft int
-.Fn sgetc "const char *str"
+.Fn sgetc "const char **str"
 .Sh DESCRIPTION
 The
 .Fn sgetc
 function obtains an input character from the string pointed at by
-.Fa str .
+.Fa str
+and advances the pointer.
 .Sh RETURN VALUES
 The
 .Fn sgetc
-functions returns a character from the string.
+functions returns either a character from the string, or EOF if the string is empty.
 .Sh SEE ALSO
 .Xr sgets 3
 .Sh STANDARDS

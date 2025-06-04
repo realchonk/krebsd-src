@@ -4,10 +4,15 @@
  * Copyright (c) 2025 Benjamin Stürz <benni@stuerz.xyz>
  */
 
-#include <string.h>
+#include <stdio.h>
 
 int
-sgetc(const char *str)
+sgetc(const char **str)
 {
-	return (str[strcspn (str, "\n") - 1]);
+	int ch;
+	if (**str == '\0')
+		return EOF;
+	ch = **str;
+	++*str;
+	return ch;
 }
